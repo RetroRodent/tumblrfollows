@@ -23,7 +23,7 @@ client = pytumblr.TumblrRestClient(
 )
 
 # Make the request
-followers = client.followers('lazytechsupport.tumblr.com', limit=1, offset=0)
+followers = client.followers(tokens['blog_url']+'.tumblr.com', limit=1, offset=0)
 print followers['total_users']
 #print followers['users'][0]['name']
 #print followers['users']
